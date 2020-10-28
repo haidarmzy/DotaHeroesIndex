@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import RxSwift
+
+protocol HeroesViewModelling {
+    var resultDotaHeroesList: PublishSubject<[HeroesModel]> {get}
+    var resultError: PublishSubject<String> {get}
+    
+    func getAllHeroesList()
+}
