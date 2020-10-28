@@ -18,13 +18,6 @@ class ViewController: UIViewController {
     var listHeroesData: [HeroesModel]?
     let userDefault = UserDefaults.standard
     
-    let textInit: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Hello"
-        return label
-    }()
-    
     let sideViewContainer: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
